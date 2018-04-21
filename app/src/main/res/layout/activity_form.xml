@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.FormActivity"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:id="@+id/et_judul_buku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="judul buku"
+        />
+    <EditText
+        android:id="@+id/et_identitas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ISBN"
+        />
+    <Spinner
+        android:id="@+id/spinner_tahun_terbit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/text_tahun"
+        >
+    </Spinner>
+
+    <Spinner
+        android:id="@+id/spinner_penerbit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:entries="@array/text_penerbit">
+    </Spinner>
+
+    <RadioGroup
+        android:id="@+id/rbGroup_jenis_buku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb_buku_agama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="buku agama"
+            />
+        <RadioButton
+            android:id="@+id/rb_buku_komputer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="buku komputer"
+            />
+        <RadioButton
+            android:id="@+id/rb_buku_novel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="novel"
+            />
+        <RadioButton
+            android:id="@+id/rb_buku_lain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="lain - lain"
+            />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/ed_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="jumlah = 0"
+        />
+    <SeekBar
+        android:id="@+id/sb_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"
+        />
+    <EditText
+        android:id="@+id/ed_warna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="kode warna"
+        />
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/ed_rangkuman"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:hint="rangkuman"
+
+        />
+
+
+</LinearLayout>
