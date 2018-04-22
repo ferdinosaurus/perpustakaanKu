@@ -200,6 +200,7 @@ public class FormActivity extends AppCompatActivity {
             bukuDataSource.insert(bukuModel);
             bukuDataSource.close();
             Intent intent = new Intent(this,ListActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
             finish();
         }
@@ -247,6 +248,7 @@ public class FormActivity extends AppCompatActivity {
             bukuDataSource.close();
             Toast.makeText(this, "update", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(this,ListActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
             finish();
         }
